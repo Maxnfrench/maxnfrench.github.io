@@ -16,6 +16,23 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel">
+            <ul class="slides">
+                {% for slides in post.carousel %}
+                <li>
+                <img src="{{ slides.image }}">
+                </li>
+                {% endfor %}
+            </ul>
+            </div>
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body"> 
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong><a href="http://startbootstrap.com">{{ post.client }}</a>

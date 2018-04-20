@@ -1,15 +1,19 @@
 ---
-title: Escape
-subtitle: Website Design
+title: Kokeshi!
+subtitle: Japanese style portraits
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+img: kokeshi-large.jpg
+thumbnail: kokeshi-thumb.jpg
+carousel:
+  - image: /img/carousel/kokeshi/Kokeshi1.jpg
+  - image: /img/carousel/kokeshi/Kokeshi2.jpg
+  - image: /img/carousel/kokeshi/Kokeshi3.jpg
 
+alt: image-alt
+project-date: June 2017
+client: 30wx30d cms
+category: Abstract
+description: Seven Kokeshi dolls visit a photobooth in Tokyo
 ---

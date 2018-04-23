@@ -386,6 +386,72 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+/* mailchimp sign up */
+/* do for all orientations */
+#mailchimp {
+	background: #dad603da;
+	color: #3D6392;
+    padding: 0.3em 0.3em;
+    width: 30em;
+    margin: auto;
+    opacity: 0.99;
+    
+}
+#mailchimp input.emailbox {
+	border: medium none;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    padding: 0.6em 0.8em;
+    width: 25em;
+		border-radius: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+    }
+    
+#mailchimp input.fnamebox {
+    border: medium none;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    padding: 0.6em 0.8em;
+    width: 12em;
+       border-radius: 20px;
+       -moz-border-radius: 20px;
+       -webkit-border-radius: 20px;
+   }
+
+#mailchimp input.lnamebox {
+    border: medium none;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 0.5em;
+    padding: 0.6em 0.8em;
+    width: 12em;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+
+		#mailchimp input.email { background: #fff }
+		#mailchimp input.name { background: #fff}
+		#mailchimp input[type="submit"] {
+			background: #115B87;
+			color: #fff;
+			cursor: pointer;
+			font-size: 15px;
+			width: 35%;
+			padding: 8px 0;
+
+		}
+			#mailchimp input[type="submit"]:hover { color: #F2C94C }
 
 
 /* CTA text media text for screens */
@@ -1299,6 +1365,11 @@ ul.social-buttons li a:active {
     float: left;
     width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
     padding: 5px; /* if you want space between the images */
+  }
+  
+
+  html, body {
+    overflow-x: hidden;
   }
 
   

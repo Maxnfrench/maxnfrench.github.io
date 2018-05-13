@@ -1,9 +1,10 @@
 ---
 title: Kokeshi!
 subtitle: Japanese style portraits
+subheading: Seven Kokeshi dolls visit a Tokyo photobooth
 layout: default
 modal-id: 2
-date: 2014-07-17
+date: 2017-01-01
 img: kokeshi-large.jpg
 thumbnail: kokeshi-thumb.jpg
 carousel:
@@ -14,6 +15,6 @@ carousel:
 alt: image-alt
 project-date: June 2017
 client: 30wx30d cms
-category: Abstract
+category: Acrylic on Canvas
 description: Seven Kokeshi dolls visit a photobooth in Tokyo
 ---

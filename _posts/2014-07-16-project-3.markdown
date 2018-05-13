@@ -3,13 +3,14 @@ title: Metamorphosis
 subtitle: Eye popping 3D collages
 layout: default
 modal-id: 3
-date: 2014-07-16
-img: golden.png
-thumbnail: golden-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
-
+date: 2018-01-16
+img: metamorphosis-large.jpg
+thumbnail: metamorphosis-thumb.jpg
+carousel:
+  - image: /img/carousel/metamorphosis/metamorphosis1.jpg
+alt: Metamorphosis butterfly painting - stephen french original artwork
+project-date: November 2017
+client: 100w x 100d cms
+category: Mixed media
+description: Description
 ---

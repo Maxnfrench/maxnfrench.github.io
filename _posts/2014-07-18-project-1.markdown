@@ -4,12 +4,14 @@ subtitle: Aztec ariel views
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: dreams
-thumbnail: dreams-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+img: crashland-large.jpg
+thumbnail: crashland-thumb.jpg
+carousel:
+  - image: /img/carousel/crashland/crashland1.jpg
+alt: Aztec ariel artwork - stephen french original
+project-date: January 2018
+client: approx. 100w x 100d cms 
+category: Acrylic on canvas
+description: Description! 
 
 ---

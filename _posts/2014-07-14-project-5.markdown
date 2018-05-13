@@ -1,15 +1,17 @@
 ---
-title: And many more!
-subtitle: 
+title: And many more
+subtitle: Old favourites, new additions
 layout: default
 modal-id: 5
 date: 2014-07-14
-img: startup-framework.png
-thumbnail: startup-framework-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+img: other-large.jpg
+thumbnail: other-thumb.jpg
+carousel:
+  - image: /img/carousel/other/other1.jpg
+alt: Stunning scottish paintings - Stephen French original artwork
+project-date: Various
+client: Various
+category: Various
+description: Over 30 new paintings will be displayed over the 3 exhibitions, making this the largest ever display of Stephen's work.
 
 ---

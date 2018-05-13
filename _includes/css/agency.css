@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -243,10 +243,10 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-weight: 400;
+    font-weight: 800;
     letter-spacing: 1px;
     font-size: 0.9em;
-    color: #fff;
+    color: black;
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -297,12 +297,16 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 0 0;
-        background-color: #222;
+        background-color: rgb(247, 247, 247);
         opacity: 0.9;media
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 10 vw;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: rgb(158, 0, 0);
+        text-transform: uppercase;
 
     }    
 
@@ -386,16 +390,70 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
-/* mailchimp sign up */
-/* do for all orientations */
+/*mailchimp navbar signup */
 #mailchimp {
-	background: #dad603da;
-	color: #3D6392;
-    padding: 0.3em 0.3em;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid teal;
+	color: teal;
+    width: 40em;
+    margin: 0 auto auto;
+    border-radius: 10px;
+    padding: 0.2em 0.2em;
+}
+
+#mailchimp input.emailbox {
+    display: inline-block;
+	border: 2px solid teal;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0.4em 0 0.2em 1em;
+    }
+
+#mailchimp input.button {
+    display: inline-block;
+    border-width: 2px 2px 2px 0;
+    border-color: teal;
+    background-color: rgb(55, 205, 50);
+    color: rgb(255, 255, 255);
+    font-family: 'Catamaran' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-style: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0.4em 1em 0.2em 0;
+}
+
+#mailchimp .emailblock {
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+
+portfolio h2.collectiontitle {
+    display: block;
+    font-size: 4em;
+    font-weight: 800;
+    margin: 8em auto;
+
+}
+
+
+/* mailchimp form sign up */
+/* do for all orientations, insert social media links, refer a friend?*/
+/*#mailchimp {
+    background-color: purple;
+    opacity: 0.9;
+	color: rgb(255, 255, 255);
+    padding: 0.4em 0.2em;
+    border-radius: 40px;
     width: 30em;
-    margin: auto;
-    opacity: 0.99;
-    
+    margin-left: 46em;    
 }
 #mailchimp input.emailbox {
 	border: medium none;
@@ -406,9 +464,9 @@ header .intro-text .intro-heading {
     margin-bottom: 0.5em;
     padding: 0.6em 0.8em;
     width: 25em;
-		border-radius: 15px;
-		-moz-border-radius: 15px;
-		-webkit-border-radius: 15px;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
     }
     
 #mailchimp input.fnamebox {
@@ -419,10 +477,10 @@ header .intro-text .intro-heading {
     font-style: italic;
     margin-bottom: 0.5em;
     padding: 0.6em 0.8em;
-    width: 12em;
-       border-radius: 20px;
-       -moz-border-radius: 20px;
-       -webkit-border-radius: 20px;
+    width: 12.4em;
+       border-radius: 10px;
+       -moz-border-radius: 10px;
+       -webkit-border-radius: 10px;
    }
 
 #mailchimp input.lnamebox {
@@ -433,10 +491,10 @@ header .intro-text .intro-heading {
     font-style: italic;
     margin-bottom: 0.5em;
     padding: 0.6em 0.8em;
-    width: 12em;
-    border-radius: 20px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
+    width: 12.4em;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 
@@ -453,6 +511,7 @@ header .intro-text .intro-heading {
 		}
 			#mailchimp input[type="submit"]:hover { color: #F2C94C }
 
+*/
 
 /* CTA text media text for screens */
 
@@ -601,7 +660,7 @@ header .intro-text .intro-heading {
 
 /* header for tablets and screens */
 
-@media screen and (orientation:landscape) and (min-width: 768px) {
+@media screen and (orientation:landscape) and (min-width: 769px) {
 
     header {
         text-align: center;
@@ -687,7 +746,7 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-heading {
         margin-bottom: 3vh;
-        margin-top: 3vh
+        margin-top: 3vh;
         text-transform: uppercase; 
         font-family: {{ site.data.template.font.primary }};
         font-size: 8.5vw;
@@ -746,11 +805,12 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-heading {
         margin-bottom: 5vh;
-        text-transform: uppercase; 
+        text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
         font-size: 5.5em;
         font-weight: 1000;
         line-height: 100%;
+        color: grey;
     }
 
 
@@ -777,7 +837,7 @@ header .intro-text .intro-heading {
 
     header {
         text-align: center;
-        color: #fff;
+        color: rgb(73, 69, 69);
         background-attachment: scroll;
         background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
         /* to change picture to lower res */
@@ -798,25 +858,85 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-lead-in {
+        opacity: 0.9;
         margin-bottom: 3vh;
+        margin-top: 0;
         font-family: {{ site.data.template.font.secondary }};
-        font-size: 2.6em;
+         font-size: 2.6em;
         text-transform: uppercase;
+        text-align: right;
         line-height: 2em;
         padding-top: 0;
         padding-bottom: 0;
+        margin-left: 9em;
         border-top: 0
         border-bottom: 0
     }
 
     header .intro-text .intro-heading {
+
+        color: rgb(255, 255, 255);
         margin-bottom: 5vh;
         text-transform: uppercase; 
         font-family: {{ site.data.template.font.primary }};
-        font-size: 8.2em;
+        font-size: 8em;
         font-weight: 1000;
         line-height: 100%;
-    }
+        border-radius: 3px;
+        text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; 
+
+}
+
+header .intro-text .intro-heading span {
+    color: rgb(255, 0, 0);
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),
+    1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255),
+    1px 1px 0 rgb(255, 255, 255); 
+    
+}
+
+
+header .intro-text .heading-byline {
+    display:inline-block;
+    color: white;
+    padding: 0 0.1em 0 1em;
+    background-color: rgb(216, 14, 14);
+    opacity: 0.8;
+    text-transform: uppercase; 
+    text-align: right;
+    text-shadow: 0;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.25em;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    margin-left: 25vw;
+
+}
+
+header .intro-text .artist-byline {
+    display:inline-block;
+    color: white;
+    padding: 0 0.1em 0 1em;
+    background-color: rgb(65, 10, 97);
+    opacity: 0.8;
+    text-transform: uppercase; 
+    text-align: right;
+    text-shadow: 0;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.25em;
+    margin-left: 25vw;
+}
+
 
     .btn-xl {
         padding: 1em 2em;
@@ -833,7 +953,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 4em;
+    padding: 0;
 }
 
 /* border divider
@@ -850,16 +970,25 @@ section hr.divider{
 
 
 section h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2.3em;
+}
+
+section h2.collectiontitle {
+
+    margin-top: 1.2em;
+    margin-bottom:1.2em;
+    font-size: 2.5em;
+    font-weight: 800;
+
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
+    margin-bottom: 4em;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 16px;
+    font-size: 1em;
     font-style: italic;
     font-weight: 400;
 }
@@ -869,9 +998,35 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+hr.divider {
+    border: 0.05em solid teal;
+    max-width: 50em;
+}
+
+#services a {
+    display: block;
+    position: relative;
+    background-color: whitesmoke;
+    color: teal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.8em;
+    max-width: 40em;
+    border: 2px solid teal;
+    margin: 2em auto;
+}
+
+
+h3.sign-up {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 1em
+}
+
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 15px;
+    margin: 0 0 1em;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -1301,7 +1456,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
-    font-size: 3em;
+    font-size: 8vw;
 }
 
 .portfolio-modal .modal-content p {
@@ -1321,7 +1476,8 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+    margin-bottom: 0.5em;
+    padding: 1em;
 }
 
 .portfolio-modal .close-modal {
@@ -1361,13 +1517,14 @@ ul.social-buttons li a:active {
 
 /* Portfolio section on modal pages */
 
-.slides li {
-    float: left;
-    width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
-    padding: 5px; /* if you want space between the images */
+.carousel {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
   
 
+  
   html, body {
     overflow-x: hidden;
   }

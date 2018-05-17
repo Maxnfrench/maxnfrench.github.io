@@ -12,7 +12,7 @@ carousel:
   - image: /img/carousel/kokeshi/Kokeshi2.jpg
   - image: /img/carousel/kokeshi/Kokeshi3.jpg
 
-alt: image-alt
+alt: Kokeshi-tetsuo
 project-date: June 2017
 client: 30wx30d cms
 category: Acrylic on Canvas

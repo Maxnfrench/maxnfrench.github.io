@@ -8,6 +8,8 @@ img: whisperfish-large.jpg
 thumbnail: whisperfish-thumb.jpg
 carousel:
   - image: /img/carousel/whisperfish/whisperfish1.jpg
+  - image: /img/carousel/whisperfish/whisperfish2.jpg
+  - image: /img/carousel/whisperfish/whisperfish3.jpg
 alt: Whisperfish fish painting - Stephen French original artwork
 project-date: April 2014
 client: various

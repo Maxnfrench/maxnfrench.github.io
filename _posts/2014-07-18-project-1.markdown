@@ -8,6 +8,8 @@ img: crashland-large.jpg
 thumbnail: crashland-thumb.jpg
 carousel:
   - image: /img/carousel/crashland/crashland1.jpg
+  - image: /img/carousel/crashland/crashland2.jpg
+  - image: /img/carousel/crashland/crashland3.jpg
 alt: Aztec ariel artwork - stephen french original
 project-date: January 2018
 client: approx. 100w x 100d cms 

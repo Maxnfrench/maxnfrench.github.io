@@ -1,5 +1,5 @@
 ---
-title: Still lives
+title: Still lifes
 subtitle: A fresh perspective
 layout: default
 modal-id: 4
@@ -8,6 +8,8 @@ img: still-large.jpg
 thumbnail: still-thumb.jpg
 carousel:
   - image: /img/carousel/still/still1.jpg
+  - image: /img/carousel/still/still2.jpg
+  - image: /img/carousel/still/still3.jpg
 alt: Still life paintings - Stephen French original artwork
 project-date: August 2017
 client: various

@@ -8,6 +8,11 @@ img: other-large.jpg
 thumbnail: other-thumb.jpg
 carousel:
   - image: /img/carousel/other/other1.jpg
+  - image: /img/carousel/other/other2.jpg  
+  - image: /img/carousel/other/other3.jpg
+  - image: /img/carousel/other/other4.jpg
+  - image: /img/carousel/other/other5.jpg
+  - image: /img/carousel/other/other6.jpg
 alt: Stunning scottish paintings - Stephen French original artwork
 project-date: Various
 client: Various

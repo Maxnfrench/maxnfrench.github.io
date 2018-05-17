@@ -392,11 +392,11 @@ header .intro-text .intro-heading {
 
 /*mailchimp navbar signup */
 #mailchimp {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247, 247, 247);
     border: 2px solid teal;
 	color: teal;
     width: 40em;
-    margin: 0 auto auto;
+    margin: 2em auto 5em auto;
     border-radius: 10px;
     padding: 0.2em 0.2em;
 }
@@ -414,6 +414,10 @@ header .intro-text .intro-heading {
     margin: 0.4em 0 0.2em 1em;
     }
 
+h3.promo {
+    text-align: center;
+}
+
 #mailchimp input.button {
     display: inline-block;
     border-width: 2px 2px 2px 0;
@@ -426,14 +430,43 @@ header .intro-text .intro-heading {
     text-transform: uppercase;
     text-align: center;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    margin: 0.4em 1em 0.2em 0;
+    margin: 0 0 0.2em 0;
 }
 
-#mailchimp .emailblock {
-    display: inline-block;
-    margin-bottom: 0.5em;
+#mailchimp input.button:hover {
+    background-color: #00b806
 }
 
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0;
+  transform: translateY(1px);
+}
+
+#mailchimp .mc-field-group {
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#mailchimp p.mailchimp {
+    text-align: center;
+}
+
+#mailchimp .mce_inline_error {
+    color: red;
+    font-weight: 800;
+    text-transform: bold;
+    font-size: 1.5em;
+}
+
+#mce-success-response {
+    color: rgb(17, 202, 0);
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.3em 2em;
+}
 
 portfolio h2.collectiontitle {
     display: block;
@@ -776,17 +809,13 @@ portfolio h2.collectiontitle {
     header {
         text-align: center;
         color: #fff;
-        background-attachment: scroll;
-        background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+        background-attachment: fixed;
+        background-image: url('{{ site.baseurl }}/img/header-bg-lg.jpg');
         /* to change picture to lower res */
         background-position: left center;
         background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        max-width: auto;
-        height: 100vh;
+        background-size: auto;
+
     
     }
 
@@ -839,9 +868,9 @@ portfolio h2.collectiontitle {
         text-align: center;
         color: rgb(73, 69, 69);
         background-attachment: scroll;
-        background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+        background-image: url('{{ site.baseurl }}/img/header-bg-lg.jpg');
         /* to change picture to lower res */
-        background-position: left center;
+        background-position: left top;
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -938,6 +967,28 @@ header .intro-text .artist-byline {
 }
 
 
+/* for very large screens */
+
+@media screen and (orientation:landscape) and (min-width: 1367px) {
+
+    header {
+        text-align: center;
+        color: rgb(73, 69, 69);
+        background-attachment: scroll;
+        background-image: url('{{ site.baseurl }}/img/header-bg-xl.jpg');
+        /* to change picture to lower res */
+        background-position: left top;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        max-width: auto;
+        height: 100vh;
+    
+    }
+}
+
     .btn-xl {
         padding: 1em 2em;
         border-color: #{{ site.data.template.color.primary }};
@@ -948,7 +999,6 @@ header .intro-text .artist-byline {
         font-weight: 700;
         word-wrap: normal;
         color: #fff;
-        background-color: #{{ site.data.template.color.primary }};
     }
 }
 
@@ -970,9 +1020,9 @@ section hr.divider{
 
 
 section h2.section-heading {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    font-size: 2.3em;
+    margin: 2.5em auto;
+    font-size: 2.2em;
+    text-align: center;
 }
 
 section h2.collectiontitle {
@@ -984,13 +1034,18 @@ section h2.collectiontitle {
 
 }
 
-section h3.section-subheading {
-    margin-bottom: 4em;
+section h3 {
+
+    background-color: white;
+    padding: 1em;
+    margin: 2em auto 2em auto;
+    color: black;
     text-transform: none;
-    font-family: {{ site.data.template.font.secondary }};
+    text-align: center;
+    font-family: "Catamaran", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1em;
-    font-style: italic;
-    font-weight: 400;
+    max-width: 40em;
+    font-weight: 800;
 }
 
 .service-heading {
@@ -999,8 +1054,8 @@ section h3.section-subheading {
 }
 
 hr.divider {
-    border: 0.05em solid teal;
-    max-width: 50em;
+    border: 1px solid teal;
+    max-width: 15em;
 }
 
 #services a {
@@ -1017,6 +1072,14 @@ hr.divider {
     margin: 2em auto;
 }
 
+section#services hr.divider {
+    margin-top: 5em;
+}
+
+section#services a {
+    margin-top: 6em;
+    margin-bottom: 0;
+}
 
 h3.sign-up {
     text-align: center;
@@ -1302,6 +1365,47 @@ h3.sign-up {
     }
 }
 
+
+.bioimage {
+    background-image: url('{{ site.baseurl }}/img/stephen_french.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 800px;
+    margin-top: 10em;
+}
+
+h2.biotitle {
+    text-align: center;
+    margin: 2em;
+}
+
+p.bio {
+    margin: 0 auto 4em auto;
+    max-width: 40em;
+
+    
+}
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 .team-member {
     margin-bottom: 50px;
     text-align: center;
@@ -1328,14 +1432,20 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
+    background-image: url('{{ site.baseurl }}/img/contact2-md.jpg');
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 section#contact .section-heading {
-    color: #fff;
+    color: black;
+    background-color: white;
+    border: black 1px solid;
+    width: 6em;
+    padding: 0.5em;
 }
+
 
 section#contact .form-group {
     margin-bottom: 25px;
@@ -1351,7 +1461,7 @@ section#contact .form-group input.form-control {
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px;
+    height: 246px;
 }
 
 section#contact .form-control:focus {
@@ -1456,7 +1566,8 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
-    font-size: 8vw;
+    font-size: 6vw;
+    text-align: center;
 }
 
 .portfolio-modal .modal-content p {

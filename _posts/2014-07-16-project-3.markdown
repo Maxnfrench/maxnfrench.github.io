@@ -8,6 +8,8 @@ img: metamorphosis-large.jpg
 thumbnail: metamorphosis-thumb.jpg
 carousel:
   - image: /img/carousel/metamorphosis/metamorphosis1.jpg
+  - image: /img/carousel/metamorphosis/metamorphosis2.jpg
+  - image: /img/carousel/metamorphosis/metamorphosis3.jpg
 alt: Metamorphosis butterfly painting - stephen french original artwork
 project-date: November 2017
 client: 100w x 100d cms

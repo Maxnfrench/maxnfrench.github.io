@@ -285,7 +285,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 1.2em;
+        font-size: 1.3em;
         -webkit-transition: all .8s;
         -moz-transition: all .8s;
         transition: all .8s;
@@ -312,12 +312,11 @@ fieldset[disabled] .btn-xl.active {
 
 }
 
-
 @media(max-width:767px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 0 0;
         border: 0;
-        background-color: black;
+        background-color: whitesmoke;
         opacity: 0;
         -webkit-transition: padding .8s;
         -moz-transition: padding .8s;
@@ -326,6 +325,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default .navbar-brand {
         font-size: 1.2em;
+        text-align: left;
         -webkit-transition: all .8s;
         -moz-transition: all .8s;
         transition: all .8s;
@@ -338,14 +338,46 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink {
         padding: 0 0;
         background-color: #222;
-        opacity: 0.9;media
+        opacity: 0.9;
     }
 
-    .navbar-default.navbar-shrink .navbar-brand {
+    }
+
+        .navbar-default.navbar-shrink .navbar-brand {
         font-size: 10 vw;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: rgb(158, 0, 0);
+        text-transform: uppercase;
 
     }    
 
+}
+
+@media(min-width:767px) and (max-width: 1024px) {
+
+    .navbar-default .navbar-brand {
+        font-size: 0.7em;
+        -webkit-transition: all .8s;
+        -moz-transition: all .8s;
+        transition: all .8s;
+    }
+
+    .navbar-default .nav li a {
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+}
+
+.navbar-default .navbar-brand {
+    font-size: 1.2em;
+    text-align: left;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    transition: all .8s;
 }
 
 
@@ -401,6 +433,20 @@ header .intro-text .intro-heading {
     padding: 0.2em 0.2em;
 }
 
+@media (max-width: 650px) {
+
+    #mailchimp {
+        background-color: rgb(247, 247, 247);
+        border: 2px solid teal;
+        color: teal;
+        width: auto;
+        margin: 2em 1em 5em 1em;
+        border-radius: 10px;
+        padding: 0.2em 0.2em;
+    }
+
+}
+
 #mailchimp input.emailbox {
     display: inline-block;
 	border: 2px solid teal;
@@ -413,6 +459,25 @@ header .intro-text .intro-heading {
     padding: 0.5em 0.5em 0.5em 0.5em;
     margin: 0.4em 0 0.2em 1em;
     }
+
+
+
+@media (max-width: 650px) {
+
+    #mailchimp input.emailbox {
+        display: inline-block;
+        border: 2px solid teal;
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.5em;
+        font-style: italic;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0.5em;
+        margin: 0.4em auto;
+        }
+
+}
 
 h3.promo {
     text-align: center;
@@ -433,6 +498,9 @@ h3.promo {
     margin: 0 0 0.2em 0;
 }
 
+
+
+
 #mailchimp input.button:hover {
     background-color: #00b806
 }
@@ -441,6 +509,24 @@ h3.promo {
   background-color: #3e8e41;
   box-shadow: 0;
   transform: translateY(1px);
+}
+
+@media (max-width: 650px) {
+
+    #mailchimp input.button {
+        display: inline-block;
+        border-width: border: 2px solid teal;
+        background-color: rgb(55, 205, 50);
+        color: rgb(255, 255, 255);
+        font-family: 'Catamaran' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.5em;
+        font-style: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0.5em;
+        margin: 0 auto;
+    }
+
 }
 
 #mailchimp .mc-field-group {
@@ -589,13 +675,100 @@ portfolio h2.collectiontitle {
 
 /* header for tablet and mobile portrait */
 
-@media screen and (orientation:portrait) and (max-width: 768px) {
+@media screen and (orientation:portrait) {
+    header {
+        text-align: center;
+        color: #fff;
+        background-attachment: scroll;
+        background-image: url('{{ site.baseurl }}/img/header-tab-md.jpg');
+        background-position: left center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    header .intro-text .intro-heading {
+        margin-top: 3em;
+        margin-bottom: 3em;
+        text-transform: uppercase; 
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 1.8em;
+        font-weight: 1000;
+        line-height: 100%;
+        border-radius: 3px;
+        text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;   
+    }
+
+    header .intro-text .intro-heading span {
+        color: rgb(255, 0, 0);
+        text-shadow:
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255); 
+        
+    }
+
+    header .intro-text .heading-byline {
+        display:inline-block;
+        color: white;
+        padding: 0 0.1em 0 1em;
+        background-color: rgb(216, 14, 14);
+        opacity: 0.8;
+        text-transform: uppercase; 
+        text-align: right;
+        text-shadow: 0;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-top: 1.6em;
+        margin-bottom: 1.6em;
+        margin-left: 25vw;
+
+    }
+
+    header .intro-text .artist-byline {
+        display:inline-block;
+        color: white;
+        padding: 0 0.1em 0 1em;
+        background-color: rgb(65, 10, 97);
+        opacity: 0.8;
+        text-transform: uppercase; 
+        text-align: right;
+        text-shadow: 0;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-left: 25vw;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (orientation:portrait) and (min-width: 540px) {
 
     header {
         text-align: center;
         color: #fff;
         background-attachment: scroll;
-        background-image: url('{{ site.baseurl }}/img/header-tab.jpg');
+        background-image: url('{{ site.baseurl }}/img/header-tab-lg.jpg');
         background-position: left center;
         background-repeat: no-repeat;
         -webkit-background-size: cover;
@@ -644,8 +817,6 @@ portfolio h2.collectiontitle {
     }
 }
 
-
-
 /* header for tablet and mobile landscape */
 
 @media screen and (orientation:landscape) and (max-width: 768px) {
@@ -654,7 +825,7 @@ portfolio h2.collectiontitle {
         text-align: center;
         color: #fff;
         background-attachment: scroll;
-        background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+        background-image: url('{{ site.baseurl }}/img/header-md.jpg');
         /* to change picture to lower res */
         background-position: left center;
         background-repeat: no-repeat;
@@ -684,10 +855,64 @@ portfolio h2.collectiontitle {
         margin-bottom: 5vh;
         text-transform: uppercase; 
         font-family: {{ site.data.template.font.primary }};
-        font-size: 8.5vw;
+        font-size: 2.7em;
         font-weight: 1000;
         line-height: 100%;
+        border-radius: 3px;
+        text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; 
     }
+
+    header .intro-text .intro-heading span {
+        color: rgb(255, 0, 0);
+        text-shadow:
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255); 
+        
+    }
+
+
+    header .intro-text .heading-byline {
+        display:inline-block;
+        color: white;
+        padding: 0 0.1em 0 1em;
+        background-color: rgb(216, 14, 14);
+        opacity: 0.8;
+        text-transform: uppercase; 
+        text-align: right;
+        text-shadow: 0;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 1.4em;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-top: 1.6em;
+        margin-bottom: 1.6em;
+        margin-left: 25vw;
+
+    }
+
+    header .intro-text .artist-byline {
+        display:inline-block;
+        color: white;
+        padding: 0 0.1em 0 1em;
+        background-color: rgb(65, 10, 97);
+        opacity: 0.8;
+        text-transform: uppercase; 
+        text-align: right;
+        text-shadow: 0;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 1.4em;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-left: 25vw;
+    
+    }
+
 }
 
 
@@ -698,8 +923,8 @@ portfolio h2.collectiontitle {
     header {
         text-align: center;
         color: #fff;
-        background-attachment: scroll;
-        background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+        background-attachment: fixed;
+        background-image: url('{{ site.baseurl }}/img/header-bg-lg.jpg');
         /* to change picture to lower res */
         background-position: left center;
         background-repeat: no-repeat;
@@ -728,16 +953,67 @@ portfolio h2.collectiontitle {
     }
 
     header .intro-text .intro-heading {
+        margin-top: 10vh;
         margin-bottom: 10vh;
         text-transform: uppercase; 
         font-family: {{ site.data.template.font.primary }};
         font-size: 5.2em;
         font-weight: 1000;
         line-height: 100%;
+        border-radius: 3px;
+        text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;   
     }
+
+    header .intro-text .intro-heading span {
+        color: rgb(255, 0, 0);
+        text-shadow:
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255); 
+        
+    }
+
+    header .intro-text .heading-byline {
+        display:inline-block;
+        color: white;
+        padding: 0 0.1em 0 1em;
+        background-color: rgb(216, 14, 14);
+        opacity: 0.8;
+        text-transform: uppercase; 
+        text-align: right;
+        text-shadow: 0;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 2em;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-top: 1.6em;
+        margin-bottom: 1.6em;
+        margin-left: 25vw;
+
+    }
+
+    header .intro-text .artist-byline {
+        display:inline-block;
+        color: white;
+        padding: 0 0.1em 0 1em;
+        background-color: rgb(65, 10, 97);
+        opacity: 0.8;
+        text-transform: uppercase; 
+        text-align: right;
+        text-shadow: 0;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 2em;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-left: 25vw;
+    }
+
 }
-
-
 
 
 
@@ -749,7 +1025,7 @@ portfolio h2.collectiontitle {
         text-align: center;
         color: #fff;
         background-attachment: fixed;
-        background-image: url('{{ site.baseurl }}/img/header-tab.jpg');
+        background-image: url('{{ site.baseurl }}/img/header-tab-lg.jpg');
         /* to change above image */
         background-position: left center;
         background-repeat: no-repeat;
@@ -782,9 +1058,26 @@ portfolio h2.collectiontitle {
         margin-top: 3vh;
         text-transform: uppercase; 
         font-family: {{ site.data.template.font.primary }};
-        font-size: 8.5vw;
+        font-size: 5em;
         font-weight: 1000;
         line-height: 100%;
+        border-radius: 3px;
+        text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; 
+    }
+
+
+    header .intro-text .intro-heading span {
+        color: rgb(255, 0, 0);
+        text-shadow:
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255); 
+        
     }
 
     .btn-xl {
@@ -802,10 +1095,34 @@ portfolio h2.collectiontitle {
 
 }
 
+
+@media screen and (orientation:portrait) and (min-width: 900px) {
+
+    header {
+        text-align: center;
+        color: #fff;
+        background-attachment: fixed;
+        background-image: url('{{ site.baseurl }}/img/header-tab.jpg');
+        /* to change above image */
+        background-position: left center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height: 100vh;
+        max-width: auto;
+    
+    }
+}
+
 /* layout for large screens */
 
 @media screen and (orientation:landscape) and (min-width: 1024px) {
 
+
+
+    
     header {
         text-align: center;
         color: #fff;
@@ -832,15 +1149,72 @@ portfolio h2.collectiontitle {
         line-height: 1.7em;
     }
 
+
     header .intro-text .intro-heading {
+
+        color: rgb(255, 255, 255);
         margin-bottom: 5vh;
-        text-transform: uppercase;
+        text-transform: uppercase; 
         font-family: {{ site.data.template.font.primary }};
-        font-size: 5.5em;
+        font-size: 6.5em;
         font-weight: 1000;
         line-height: 100%;
-        color: grey;
+        border-radius: 3px;
+        text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; 
+
     }
+
+    header .intro-text .intro-heading span {
+        color: rgb(255, 0, 0);
+        text-shadow:
+        -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255),
+        1px 1px 0 rgb(255, 255, 255); 
+        
+    }
+
+
+    header .intro-text .heading-byline {
+        display:inline-block;
+        color: white;
+        padding: 0 0.1em 0 1em;
+        background-color: rgb(216, 14, 14);
+        opacity: 0.8;
+        text-transform: uppercase; 
+        text-align: right;
+        text-shadow: 0;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 2.5em;
+        font-weight: 500;
+        line-height: 1.25em;
+        margin-top: 1.6em;
+        margin-bottom: 1.6em;
+        margin-left: 25vw;
+
+    }
+
+header .intro-text .artist-byline {
+    display:inline-block;
+    color: white;
+    padding: 0 0.1em 0 1em;
+    background-color: rgb(65, 10, 97);
+    opacity: 0.8;
+    text-transform: uppercase; 
+    text-align: right;
+    text-shadow: 0;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.25em;
+    margin-left: 25vw;
+}
+
+
 
 
     .btn-xl {
@@ -856,6 +1230,7 @@ portfolio h2.collectiontitle {
         background-color: #{{ site.data.template.color.primary }};
     }
 
+    
 }
 
 
@@ -864,6 +1239,7 @@ portfolio h2.collectiontitle {
 
 @media screen and (orientation:landscape) and (min-width: 1280px) {
 
+    
     header {
         text-align: center;
         color: rgb(73, 69, 69);
@@ -1024,6 +1400,8 @@ section h2.section-heading {
     font-size: 2.2em;
     text-align: center;
 }
+
+
 
 section h2.collectiontitle {
 
@@ -1379,31 +1757,59 @@ h3.sign-up {
     margin-top: 10em;
 }
 
+
+@media screen and (max-width: 650px) {
+    .bioimage {
+        background-image: url('{{ site.baseurl }}/img/stephen_french.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height: 800px;
+        margin-top: 10em;
+    }
+}
+
+
 h2.biotitle {
     text-align: center;
     margin: 2em;
 }
 
+@media screen and (max-width: 1024px) { 
+
+    section h2.biotitle {
+        margin: 2em auto;
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 768px) { 
+
+    section h2.biotitle {
+        margin: 2em 1em;
+        font-size: 1.6em;
+    }
+}
+
+
 p.bio {
     margin: 0 auto 4em auto;
     max-width: 40em;
-
-    
+    vertical-align: middle;
 }
 
-
-.parallax { 
-    /* The image used */
-    background-image: url("img_parallax.jpg");
-    /* Full height */
-    height: 100%; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (max-width: 600px) {
+    p.bio {
+        margin: 0 2em 4em 2em;
+        max-width: 40em;
+        vertical-align: middle;
+    }
 }
-
 
 
 .team-member {
@@ -1625,6 +2031,33 @@ ul.social-buttons li a:active {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+@media (max-width: 470px) {}
+    .portfolio-modal .modal-content img.carousel {
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0;
+    }
+}
+
+@media (max-width: 470px) {}
+    ul.slides {
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0;
+    }
+}
+
 
 /* Portfolio section on modal pages */
 

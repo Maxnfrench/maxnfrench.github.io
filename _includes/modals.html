@@ -18,7 +18,7 @@
                             
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
+<!--                            <p>{{ post.description }}</p> -->
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
             <div class="carousel">
             <ul class="slides">
                 {% for slides in post.carousel %}
-                <img src="{{ slides.image }}">
+                <img src="{{ slides.image }}" alt="{{ post.alt }}">
                 {% endfor %}
             </ul>
             </div>

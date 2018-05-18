@@ -210,7 +210,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand {
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial;
     font-size: 1.3em;
-    color: #{{ site.data.template.color.primary }};
+    color: red;
 }
 
 
@@ -326,9 +326,16 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default .navbar-brand {
         font-size: 1.2em;
         text-align: left;
+        color: whitesmoke;
         -webkit-transition: all .8s;
         -moz-transition: all .8s;
         transition: all .8s;
+    }
+
+
+    .navbar-default .nav li a {
+
+        color: whitesmoke;
     }
 
     .navbar-default .navbar-nav>.active>a {
@@ -544,6 +551,15 @@ h3.promo {
     font-weight: 800;
     text-transform: bold;
     font-size: 1.5em;
+}
+
+@media (max-width: 650px) {
+    #mailchimp .mce_inline_error {
+        color: red;
+        font-weight: 200;
+        text-transform: bold;
+        font-size: 1em;
+    }
 }
 
 #mce-success-response {
@@ -1399,6 +1415,17 @@ section h2.section-heading {
     margin: 2.5em auto;
     font-size: 2.2em;
     text-align: center;
+    word-wrap: break-word;
+}
+
+@media (max-width 767px) {
+
+    section h2.section-heading {
+    margin: 2.3em auto;
+    font-size: 1.7em;
+    text-align: center;
+    word-wrap: break-word;
+    }
 }
 
 
@@ -1848,10 +1875,9 @@ section#contact .section-heading {
     color: black;
     background-color: white;
     border: black 1px solid;
-    width: 6em;
+    width: 7.5em;
     padding: 0.5em;
 }
-
 
 section#contact .form-group {
     margin-bottom: 25px;

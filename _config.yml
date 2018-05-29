@@ -1,14 +1,13 @@
 url: https://stephenfrench.art
 baseurl:
+plugins:
+  - jekyll-sitemap
 
 # Site settings
 title: Stephen French Art
 email: enquiries@stephenfrench.art
 description: "Exhibitions of Stephen French's new paintings and fine art works in Dundee, St. Andrews and Ardnamurchan"
 
-
-plugins:
-  - jekyll-sitemap
 
 # Team names, titles and social links
 people:

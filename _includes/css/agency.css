@@ -429,7 +429,7 @@ header .intro-text .intro-heading {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-size: 2.4em;
-    font-weight: 1000;
+    font-weight: bold;
     line-height: 100%;
     border-radius: 3px;
     text-shadow:
@@ -616,7 +616,7 @@ header .intro-text .artist-byline {
         margin-bottom: 1em;
         text-transform: uppercase; 
         font-size: 2em;
-        font-weight: 1000;
+        font-weight: bold;
     }
 
     header .intro-text .heading-byline {
